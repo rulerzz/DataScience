@@ -230,3 +230,6 @@ print(df)
 
 # create a new column and populate it with a loop 
 df['Own'] = [i for i in range(df.shape[0])]
+
+# drop columns
+df.drop(["New", "Own"], axis=1, inplace=True)
